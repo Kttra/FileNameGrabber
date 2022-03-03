@@ -1,0 +1,1 @@
+This program is made to output the text of all the files/folders in the user's specified input. It asks the user for the folder path and will print out the files contained in that folder.
