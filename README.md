@@ -1,3 +1,4 @@
+# File Name Grabber
 This program is made for windows to output the text of all the files/folders in the user's specified input. It asks the user for the folder path and will print out the names of the files contained in that folder. It will also copy the results onto the user's clipboard.
 
 There are many use cases for such a program. One would be if you have multiple files and you need to quickly access their names. It would be too much work to manually copy them especially if the folder has 100s of files. One reason for needing access to file names quickly would be to translate them.
