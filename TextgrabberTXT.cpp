@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Update needed to not print out "Filenames.txt"
+//This version will create a file with the file names, "Filenames.txt"
 int main(){
     string directory;
 
@@ -37,7 +37,7 @@ int main(){
             system("dir /b");
             system("dir /b > filenames.txt");
             system("clip < filenames.txt");
-            system("del /f filenames.txt");
+            //system("del /f filenames.txt");
             //Going back to the default directory
             string defaultDirectory = "C:\\";
             LPSTR userRequestedDir = const_cast<char *>(defaultDirectory.c_str());
