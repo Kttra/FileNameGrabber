@@ -39,12 +39,10 @@ int main(){
         if(directoryChanged){
             //Telling user what occurred
             cout << "Copied file names from \"" << directory << "\"";
-            //cout << "\nOutputting directory list:\n";
+            cout << "\nOutputting directory list:\n\n";
 
-            //system("dir /b"); //print out file names
+            system("dir /b"); //print out file names
             system("dir /b |clip"); //copy to clipboard
-
-            cout << '\n';
 
             /*
                 Other commands:
@@ -55,9 +53,10 @@ int main(){
                 del /f filenames.txt    //Delete the file
             */
 
-            //Going back to the default directory
+            //Changes the folder in use
             string defaultDirectory = "C:\\";
             LPSTR userRequestedDir = const_cast<char *>(defaultDirectory.c_str());
+            directoryChanged = SetCurrentDirectory(userRequestedDir);
         }
         //Exits program when user request for it
         else if(directoryCheck == "EXIT" || directoryCheck == "Q" || directoryCheck == "QUIT"){
